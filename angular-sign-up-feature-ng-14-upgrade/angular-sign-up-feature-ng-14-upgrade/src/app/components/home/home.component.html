@@ -1,0 +1,45 @@
+
+<div class="container bg-primary">
+  <ng-container *ngIf="user$ | async as user">
+    <h1>Welcome to the home page, {{user.displayName}}!</h1>
+  </ng-container>
+  <!-- Patient table -->
+  <h2 style="font-weight: 700;" class="mt-4 text-center" > sensor values</h2>
+
+  <div class="row gauges-container">
+    <mwl-gauge
+      class="col three"
+      [max]="100"
+      [value]="gaugeValues[1]"
+      [animated]="true"
+      [animationDuration]="2"
+    >
+    </mwl-gauge>
+    <h2 style="font-weight: 100;" class="mt-4 text-center" color="yellow">gas</h2>
+  
+    <mwl-gauge
+        class=" col three"
+        [max]="100"
+        [value]="gaugeValues[2]"
+        [animated]="true"
+        [animationDuration]="2">
+   </mwl-gauge>
+   <h2 style="font-weight: 100;" class="mt-4 text-center" color="yellow">Humidity</h2>
+    
+    <mwl-gauge
+      class="col three"
+      [max]="100"
+      [value]="gaugeValues[3]"
+      [animated]="true"
+      [animationDuration]="1.5"
+    >
+   </mwl-gauge>
+   <h2 style="font-weight: 100;" class="mt-4 text-center">temparature</h2>
+    
+  </div>
+</div>
+
+
+  
+
+ 

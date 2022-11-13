@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "prosafe-16d44": {
+      "hosting": {
+        "prosafe-16d44": [
+          "prosafe-16d44"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "prosafe-16d44"
+  }
+}
